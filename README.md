@@ -104,7 +104,7 @@ for i in range(0, len(nums)):
     plt.tight_layout()
 plt.show()
 ```
-![2.1](2.1.jpg)
+![2.1](images/2.1.jpg)
 
 Kolom age memiliki outlier yang cukup banyak terlihat pada boxplot sehingga nilai ini cukup berpengaruh jika digunakan dalam analisis
 
@@ -118,7 +118,7 @@ for i in range(0, len(nums)):
     plt.tight_layout()
 ```
 
-![2.2](2.2.jpg)
+![2.2](images/2.2.jpg)
 
 Pada distribusi plot dari keenam variabel, didapatkan variabel age berskew positif. untuk balance dan num of product terdapat 2 puncak atau bimodal. Selain itu untuk estimated salary dan tenure cenderung stasioner di nilai-nilai tertentu.
 
@@ -134,7 +134,7 @@ for i in range(5):  # Perulangan sebanyak 5 kali
 
 plt.show()
 ```
-![2.3](2.3.jpg)
+![2.3](images/2.3.jpg)
 
 Pada hasil countplot di atas, dapat dilihat bahwa nasabah yang masuk kategori Geography:France berjumlah 5014 orang, untuk Geography:Spain berjumlah 2509 berjumlah, dan untuk Geography:Germany berjumlah 2477 orang.
 
@@ -204,7 +204,7 @@ Name: Exited, dtype: float64
 
 **Grafik nya:**
 
-![3.1](3.1.jpg)
+![3.1](images/3.1.jpg)
 
 Berdasarkan grafik dan tabel korelasi di atas:
 
@@ -237,7 +237,7 @@ plt.show()
 
 **Grafik nya:**
 
-![3.2](3.2.jpg)
+![3.2](images/3.2.jpg)
 
 Berdasarkan heatmap korelasi antar-fitur:
 
@@ -262,7 +262,7 @@ plt.title('Geography vs Exited')
 plt.ylabel('Sum of Exited')
 ```
 
-![3.3](3.3.jpg)
+![3.3](images/3.3.jpg)
 
 **Insight :**
 Berdasarkan analisa menggunakan kolom Geography, kami mendapatkan bahwa negara germany memiliki tingkat yang berpotensi churn terbanyak diantara kedua negara lainnya. Oleh karena itu, perlunya action yang harus dilakukan terhadap negara tersebut agar pelanggan dapat betah dengan product yang ditawarkan.
@@ -274,7 +274,7 @@ plt.title('Gender vs Exited')
 plt.ylabel('Sum of Exited')
 ```
 
-![3.4](3.4.jpg)
+![3.4](images/3.4.jpg)
 
 **Insight :**
 Berdasarkan analisa menggunakan kolom Gender, didapatkan bahwa pelanggan dengan jenis kelamin female lebih berpotensi untuk melakukan churn daripada laki-laki. Oleh karna itu, bank harus lebih memberikan banyak tindakan terhadap nasabah perempuan agar tetap menjadi nasabah pada bank tersebut.
@@ -292,7 +292,7 @@ import plotly.express as px
 fig = px.histogram(data, x="EstimatedSalary", y='Exited', nbins=30, title="Distribusi EstimatedSalary terhadap tingkat churn")
 fig.show()
 ```
-![4_1](4_1.jpg)
+![4_1](images/4_1.jpg)
 
 **Hasil analisis :** EstimatedSalary atau jumlah pendapatan **tidak memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi yang hampir merata pada setiap jangkauan pendapatan atau EstimatedSalary
 
@@ -302,7 +302,7 @@ fig1 = px.histogram(data, x="Age", y='Exited', nbins=30, title="Distribusi Usia 
 fig1.show()
 ``` 
 
-![4_2](4_2.jpg)
+![4_2](images/4_2.jpg)
 
 **Hasil analisis :** Usia **memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi normal pada age atau usia, dengan nasabah yang melakukan exit atau churn umumnya memiliki jangkauan usia 40-49 tahun
 
@@ -313,7 +313,7 @@ fig2 = px.histogram(data, x="Balance", y='Exited', nbins=30, title="Distribusi B
 fig2.show()
 ```
 
-![4_3](4_3.jpg)
+![4_3](images/4_3.jpg)
 
 **Hasil analisis :** Balance **memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi normal pada Balance, dengan nasabah yang melakukan exit atau churn umumnya memiliki jangkauan balance 0
 
@@ -323,7 +323,7 @@ fig3 = px.histogram(data, x="IsActiveMember", y='Exited', title="Pengaruh Active
 fig3.show()
 ```
 
-![4_0](4_0.jpg)
+![4_0](images/4_0.jpg)
 
 **Hasil analisis :** Jumlah active member **memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari nasabah yang melakukan exit atau churn umumnya bukan member aktif
 
@@ -333,7 +333,7 @@ fig4 = px.histogram(data, x="Tenure", y='Exited', nbins=30, title="Distribusi Te
 fig4.show()
 ```
 
-![4_4](4_4.jpg)
+![4_4](images/4_4.jpg)
 
 **Hasil analisis :** Tenure atau masa nasabah menggunakan layanan bank **tidak memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi yang hampir merata pada setiap jangkauan tenure
 
@@ -343,7 +343,7 @@ fig5 = px.histogram(data, x="CreditScore ", y='Exited', title="Distribusi Credit
 fig5.show()
 ```
 
-![4_5](4_5.jpg)
+![4_5](images/4_5.jpg)
 
 **Hasil analisis :** Credit score **memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi normal pada creditscore, dengan **nasabah yang melakukan exit atau churn memiliki jangkauan credit score 580-699**
 
@@ -353,7 +353,7 @@ fig6 = px.histogram(data, x="HasCrCard", y='Exited', title="Pengaruh HasCrCard t
 fig6.show()
 ```
 
-![4_6](4_6.jpg)
+![4_6](images/4_6.jpg)
 
 **Hasil analisis :** HasCrCard atau kepemilikan kartu kredit **memiliki pengaruh signifikan** terhadap churn, hal ini dapat dilihat dari kecenderungan nasabah yang memiliki kartu kredit untuk melakukan churn
 
@@ -363,7 +363,7 @@ fig7 = px.histogram(data, x="Gender", y='Exited', title="Pengaruh Gender terhada
 fig7.show()
 ```
 
-![4_7](4_7.jpg)
+![4_7](images/4_7.jpg)
 
 **Hasil analisis :** Gender atau jenis kelamin **memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi gender wanita atau Female yang memiliki jumlah exit lebih tinggi dibanding pria. Hal ini dapat dilihat bahwa wanita memiliki kecenderungan untuk churn lebih tinggi dibandingkan dengan pria.
 
@@ -374,7 +374,7 @@ fig8 = px.histogram(data, x="Geography", y='Exited', title="Distribusi Geography
 fig8.show()
 ```
 
-![4_8](4_8.jpg)
+![4_8](images/4_8.jpg)
 
 **Hasil analisis :** Geography atau negara asal nasabah **tidak memiliki pengaruh** terhadap churn, hal ini dapat dilihat dari distribusi yang hampir tidak berbeda signifikan antar lokasi. Distribusi France & Germany berbeda signifikan dengan distribusi Spain
 
