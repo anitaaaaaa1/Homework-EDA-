@@ -72,7 +72,7 @@ memory usage: 1.1+ MB
 
 Selanjutnya kita akan menganalisa kolom numerical 
 
-![1.1](1.1.jpg)
+![1.1](images/1.1.jpg)
 
 Selanjutnya kita akan menganalisa kolom categorical
 
