@@ -76,7 +76,7 @@ Selanjutnya kita akan menganalisa kolom numerical
 
 Selanjutnya kita akan menganalisa kolom categorical
 
-![1.2](1.2.jpg)
+![1.2](images/1.2.jpg)
 
 - Apakah ada kolom dengan tipe data kurang sesuai, atau nama kolom dan isinya kurang sesuai?
    
